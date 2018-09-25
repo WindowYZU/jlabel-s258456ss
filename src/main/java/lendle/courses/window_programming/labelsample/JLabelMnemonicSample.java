@@ -27,6 +27,8 @@ public class JLabelMnemonicSample {
         frame.setLayout(new FlowLayout());
         JLabel label1 = new JLabel("User");
         JLabel label2 = new JLabel("Password");
+        label1.setDisplayedMnemonic('U');
+        label2.setDisplayedMnemonic('P');
         //設定 label1 和 label2 的 displayed mnemonic
         
         ////////////////////////////////////////////
@@ -35,6 +37,8 @@ public class JLabelMnemonicSample {
         
         //設定 label1 和 label2 的 labelfor
         //////////////////////////////////
+        label1.setLabelFor(textField);
+        label2.setLabelFor(textField1);
         frame.add(label1);
         frame.add(textField);
         frame.add(label2);
